@@ -3,6 +3,11 @@
     --main-bg-color: #ccc;
     --header-bg-color: #898989;
     --onhover-bg-color: #8d6e6e;
+    --font-color: #ffffff;
+    --nav-color: #ffffff;
+    --progress-bar-color: #895668;
+    --progress-label-color: #1491c2;
+    --progress-bg-color: #ccc;
 
 }
 html
@@ -41,7 +46,7 @@ header, footer
     background-color: var(--header-bg-color);
     padding: 5%;
     font-size: 100%;
-    color: #ffffff;
+    color: var(--nav-color);
 
 }
 #upper
@@ -85,7 +90,7 @@ header, footer
 {
     position: relative;
     font-size:2rem;
-    color: #ffffff;
+    color:var(--nav-color);
     right: -103%;
     animation-duration: 4s;
     animation-name: typer;
@@ -185,7 +190,7 @@ header, footer
     display: block;
     position: relative;
     text-decoration: none;
-    color: #ffffff;
+    color: var(--nav-color);
     padding: 10%;
     text-align: center;
     right: -19%;
@@ -196,7 +201,7 @@ header, footer
     display: block;
     text-align: center;
     width: 84%;
-    color: #ffffff;
+    color:var(--nav-color);
     font-size: 200%;
     text-decoration: none;
     padding: 8%;
@@ -284,14 +289,66 @@ h1{
     flex-direction: column;
     align-items: center;
 }
-label
+#skills span
 {
     font-size: 3rem;
+    color: var(--progress-label-color);
+
 }
-label span
+.progress
 {
-    font-size: 3rem;
-    color: #3a0a72;
+    margin-bottom: 1%;
+    height: 17px;
+    border: 1px solid #000000;
+    border-radius:5px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3) inset;
+    width: 50%;
+    background-color: var(--progress-bg-color);
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+}
+.progress-bar
+{
+    height: 100%;
+    width: 0%;
+    transition: width 1s;
+    background-color:var(--progress-bar-color);
+    -webkit-transition: width 1s;
+    -moz-transition: width 1s;
+    -ms-transition: width 1s;
+    -o-transition: width 1s;
+}
+#c
+{
+    animation: c_key 2s linear 0s 1 normal forwards;
+    -webkit-animation: c_key 2s linear 0s 1 normal forwards;
+}
+#cpp
+{
+    animation: cpp_key 2s linear 0s 1 normal forwards;
+    -webkit-animation: cpp_key 2s linear 0s 1 normal forwards;
+}
+#python
+{
+    animation: python_key 2s linear 0s 1 normal forwards;
+    -webkit-animation: python_key 2s linear 0s 1 normal forwards;
+}
+#html
+{
+    animation: html_key 2s linear 0s 1 normal forwards;
+    -webkit-animation: html_key 2s linear 0s 1 normal forwards;
+}
+#cssk
+{
+    animation: cssk_key 2s linear 0s 1 normal forwards;
+    -webkit-animation: cssk_key 2s linear 0s 1 normal forwards;
+}
+#js
+{
+    animation: js_key 2s linear 0s 1 normal forwards;
+    -webkit-animation: js_key 2s linear 0s 1 normal forwards;
 }
 #interest
 {
@@ -398,5 +455,47 @@ footer span
     100%
     {
         right: -19%;
+    }
+}
+@keyframes c_key
+{
+    100%
+    {
+        width: 50%;
+    }
+}
+@keyframes cpp_key
+{
+    100%
+    {
+        width: 50%;
+    }
+}
+@keyframes python_key
+{
+    100%
+    {
+        width: 60%;
+    }
+}
+@keyframes html_key
+{
+    100%
+    {
+        width: 70%;
+    }
+}
+@keyframes cssk_key
+{
+    100%
+    {
+        width: 60%;
+    }
+}
+@keyframes js_key
+{
+    100%
+    {
+        width: 30%;
     }
 }
