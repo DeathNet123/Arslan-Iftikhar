@@ -35,17 +35,23 @@ body
 header, footer
 {
     background-color: var(--header-bg-color);
-    padding: 1%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    padding: 5%;
+    font-size: 100%;
     color: #ffffff;
 
 }
+#upper
+{
+    display: flex;
+    flex-direction: row;    
+}
+#lower
+{
+    margin-top: 1%;
+}
 #img_txt_holder
 {
-    width: 33%;
-  
+    width: 70%; 
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -53,14 +59,18 @@ header, footer
 }
 #img_txt_holder figure
 {
-    width: 29%;
+    width: 50%;
     height :auto;
-    margin: 0;
     padding: 0;
+    position: relative;
+    left: 20%;
 }
 #typing
 {
     padding: 1%;
+    position: relative;
+    font-size: 100%;
+    left: 20%;
     overflow: hidden;
     border-right: 1px solid #000000;
     animation:blinker 0.5s;
@@ -70,16 +80,64 @@ header, footer
 #typing span
 {
     position: relative;
+    font-size:200%;
+    color: #ffffff;
     right: -103%;
     animation: typer 3s;
     -webkit-animation: typer 3s;
     animation-fill-mode: forwards;
 }
+.button
+{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #e7e1e1;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: background-color 2s;
+    -webkit-transition: background-color 2s;
+    -moz-transition: background-color 2s;
+    -ms-transition: background-color 2s;
+    -o-transition: background-color 2s;
+}
+.button:hover
+{
+    background-color: var(--onhover-bg-color);
+}
+#img_theme_holder
+{
+    width: 33%;
+}
+#img_theme_holder button
+{
+    position: relative;
+    left: 95%;
+    height: 10%;
+    width: 20%;
+    padding: 1% 
+}
+#img_theme_holder button img
+{
+    width: 60%;
+    height: auto;
+}
+#lower button
+{
+    width: 7%;
+    padding: 1%
+}
+#lower button img
+{
+    width: 60%;
+}
 footer
 {
 
     border: none;
-    width: 98%;
 }
 footer span
 {
