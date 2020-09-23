@@ -84,7 +84,7 @@ header, footer
 #header_mover
 {
     position: relative;
-    font-size:200%;
+    font-size:2rem;
     color: #ffffff;
     right: -103%;
     animation-duration: 4s;
