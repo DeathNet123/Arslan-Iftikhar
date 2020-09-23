@@ -132,7 +132,7 @@ header, footer
 #lower button
 {
     width: 7%;
-    padding: 1%
+    padding: 1%;
 }
 #lower button img
 {
@@ -146,7 +146,6 @@ header, footer
 .container
 {
     position: relative;
-    border: 1px solid #000000;
 }
 #sidebar
 {
@@ -159,6 +158,7 @@ header, footer
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
+    height: 100%;
 }
 .nav_link 
 {
@@ -198,11 +198,88 @@ header, footer
 {
     border-bottom: none;
 }
+#hi
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
+#hi figure
+{
+    width: 18%;
+}
+#introduction
+{
+    font-size: 2rem;
+    width: 80%;
+    text-align: justify;
+}
+.card_white
+{
+    width: 80%;
+    font-size: 1.5rem;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.3);
+    margin-bottom: 3%;
+    padding-left: 5%;
+}
+h1{
+    text-align: center;
+    font-size: 5rem;
+}
+.card_black
+{
+    width: 80%;
+    font-size: 1.5rem;
+    padding: 1%;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    margin-bottom: 3%;
+    padding-left: 5%;
+    box-shadow: 10px 10px 10px 0px rgba(255, 255, 255, 0.3);  
+}
+#skills
+{
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    align-items: center;
+}
+label
+{
+    font-size: 3rem;
+}
+label span
+{
+    font-size: 3rem;
+    color: #3a0a72;
+}
+#interest
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#interest ul, li
+{
+    font-size: 4rem;
+}
 footer
 {
 
     border: none;
+    text-align: center;
 }
 footer span
 {
