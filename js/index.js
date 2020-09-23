@@ -1,5 +1,6 @@
 var dar_checker = 0; //Variable checker for darkmode
 var nav_checker = 0; // Variable checker for the navigation bar
+var right_bar_checker = 0; //Variable checker for right bar
 
 function darkmode()
 {
@@ -41,6 +42,22 @@ function slideapper()
         document.getElementById("sidebar").style.setProperty('left', "0");
         document.getElementById("sidebar").style.setProperty('animation-name', 'sidebar_dappear');
         nav_checker = 0;
+    }
+}
+function rightbar_appear()
+{
+    if(right_bar_checker == 0)
+    {
+        document.getElementById("rightbar").style.setProperty('right', "-19%");
+        document.getElementById("rightbar").style.setProperty('animation-name', 'rightbar_appear');
+        right_bar_checker = 1;
+    }
+    else if(right_bar_checker == 1)
+    {
+        console.log('ring');
+        document.getElementById("rightbar").style.setProperty('right', "0.1%");
+        document.getElementById("rightbar").style.setProperty('animation-name', 'rightbar_dappear');
+        right_bar_checker = 0;
     }
 }
 function increase()
