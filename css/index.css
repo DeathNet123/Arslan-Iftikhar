@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 :root
 {
     --main-bg-color: #ccc;
@@ -20,6 +21,7 @@ body
     padding: 0;
     margin: 0;
     font-size: 100%;
+    font-family: 'Roboto', sans-serif;
     border: none;
     transition: background-color 2s;
     -webkit-transition: background-color 2s;
@@ -40,6 +42,7 @@ body
 .container
 {
     min-height: 100vh;
+    margin-bottom: 2%;
 }
 header, footer
 {
@@ -102,16 +105,17 @@ header, footer
     border: none;
     cursor: pointer;
     border: 1px solid #e7e1e1;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
     transition: background-color 2s;
     -webkit-transition: background-color 2s;
     -moz-transition: background-color 2s;
     -ms-transition: background-color 2s;
     -o-transition: background-color 2s;
+    outline: none;
 }
 .button:hover
 {
@@ -124,24 +128,24 @@ header, footer
 #img_theme_holder button
 {
     position: relative;
-    left: 95%;
-    height: 10%;
-    width: 20%;
-    padding: 1% 
+    left: 80%;
+    height: 20%;
+    width: 30%;
 }
-#img_theme_holder button img
+#theme_img
 {
-    width: 60%;
-    height: auto;
+    width: 80%;
 }
+
+
 #lower button
 {
-    width: 7%;
+    width: 10%;
     padding: 1%;
 }
 #lower button img
 {
-    width: 60%;
+    width: 102%;
     transition: transform 1s;
     -webkit-transition: transform 1s;
     -moz-transition: transform 1s;
@@ -266,7 +270,7 @@ header, footer
 }
 h1{
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 .card_black
 {
@@ -281,7 +285,7 @@ h1{
     -o-border-radius: 25px;
     margin-bottom: 3%;
     padding-left: 5%;
-    box-shadow: 10px 10px 10px 0px rgba(255, 255, 255, 0.3);  
+    box-shadow: 10px 10px 10px 0px rgba(255, 255, 255, 0.5);  
 }
 #skills
 {
@@ -294,6 +298,10 @@ h1{
     font-size: 3rem;
     color: var(--progress-label-color);
 
+}
+#skills div:last-child
+{
+    margin-bottom: 5%;
 }
 .progress
 {
@@ -360,6 +368,76 @@ h1{
 #interest ul, li
 {
     font-size: 4rem;
+    
+}
+.cane
+{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    height: auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#proud
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#proud h1
+{
+    font-size: 5em;
+    width: 80%;
+    text-align: center; 
+}
+#proud h2
+{
+    width: 80%;
+    font-size: 2rem;
+    text-align: center;
+}
+#proud figure
+{
+    width: 10%;
+    padding: 0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#proud p
+{
+    text-align: justify;
+    font-size: 1.5rem;
+    width: 80%;
+}
+#contact
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact h1
+{
+    font-size: 5em;
+    width: 80%;
+    text-align: center; 
+}
+#contact h2
+{
+    width: 80%;
+    font-size: 2rem;
+    text-align: center;
+}
+#contact p
+{
+    text-align: justify;
+    font-size: 1.5rem;
+    width: 80%;
 }
 footer
 {
