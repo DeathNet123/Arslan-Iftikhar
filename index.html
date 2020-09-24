@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <script src="js/index.js" type="text/javascript"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
     <header>
@@ -16,7 +16,7 @@
         <figure><img src="images/Developer.jpg" alt="Developer" class="developer"></figure>
         <div id="typing"><span id="header_mover">Hello World, I am Arslan Iftikhar</span></div>
         </div>
-        <div id="img_theme_holder"><button onclick ="darkmode()" class="button" aria-label="Theme"><img id="theme_img"src="Icons/sun.svg" alt="sun"></button></div>
+        <div id="img_theme_holder"><button onclick ="darkmode()" class="button" aria-label="Theme"><img id="theme_img" src="Icons/sun.svg" alt="sun"></button></div>
         </div>
         <div id="lower"><button class="button" aria-label="navigation"><img src="Icons/list.svg" alt="list " id="nav_img" onclick="slideapper()"></button></div>
     </header>
@@ -78,17 +78,18 @@
             </div>
          <section id="proud">
              <h1>What can I do.</h1>
-             <figure><img src="images/Developer.jpg" class="cane"></figure>
+             <figure><img src="images/Developer.jpg" class="cane" alt="Developer"><div class="line"></div><i class="fas fa-eye fa-4x"></i></figure>
              <h2>Design What you want.</h2>
              <p>I like to keep it simple. My goals are to focus on Typography, Responsive Design, content and conveying messages you want to send.</p>
              <h2>Develop what you need.</h2>
              <p>I am Developer, so i know how to create your website to run accross different devices using lates technologies available.</p>
-             <figure><img src="images/Developer.jpg" class="cane"></figure>
+             <figure><img src="images/Developer.jpg" class="cane" alt="Developer"><div class="line"></div><i class="fas fa-mobile fa-4x"></i><div class="line"></div><i id="laptop" class="fas fa-laptop-code fa-4x"></i></figure>
             </section>
             <section id="contact">
                 <h1>I can Help.</h1>
                 <h2>I'm currently available for freelance work.</h2>
                 <p>If you have project you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</p>
+                <a href="mailto:arslan.computer2002@gmail.com" aria-label="envelope"><i class="fas fa-envelope fa-2x"> Email Me</i></a>
             </section>
         </div>        
     </main>

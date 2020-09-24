@@ -387,6 +387,13 @@ h1{
     flex-direction: column;
     align-items: center;
 }
+.line
+{
+    border-top: 1px solid var(--font-color);
+    width: 10%;
+    
+}
+
 #proud h1
 {
     font-size: 5em;
@@ -399,9 +406,17 @@ h1{
     font-size: 2rem;
     text-align: center;
 }
-#proud figure
+#proud figure img
 {
     width: 10%;
+}
+#proud figure
+{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     padding: 0;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -438,6 +453,29 @@ h1{
     text-align: justify;
     font-size: 1.5rem;
     width: 80%;
+}
+#contact a
+{
+    text-decoration: none;
+    color: var(--nav-color);
+    background-color: var(--header-bg-color);
+    padding: 1%;
+    width: 16%;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: background-color 2s;
+    -webkit-transition: background-color 2s;
+    -moz-transition: background-color 2s;
+    -ms-transition: background-color 2s;
+    -o-transition: background-color 2s;
+}
+#contact a:hover
+{
+    background-color:var(--onhover-bg-color);
 }
 footer
 {
