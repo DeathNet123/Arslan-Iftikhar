@@ -460,8 +460,9 @@ h1{
     color: var(--nav-color);
     background-color: var(--header-bg-color);
     padding: 1%;
-    width: 16%;
+    width: 20%;
     text-align: center;
+
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -481,12 +482,48 @@ footer
 {
 
     border: none;
-    text-align: center;
+    text-align: center;  
 }
-footer span
+#copy
 {
     margin: 0;
     padding: 0;
+    font-size: 2rem;
+    display: block;
+    margin-top: 3%;
+}
+.icons_holder
+{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    left: 10%;
+}
+.icons_holder a
+{
+    text-decoration: none;
+}
+.twitter
+{
+    color: #1b7cd8;
+}
+.github
+{
+    color: #000000;
+}
+.facebook
+{
+    color: #09287c;
+}
+.instagram
+{
+    color: #854b4b;
+}
+.stack
+{
+    color: #d66b13;
 }
 @keyframes blinker
 {

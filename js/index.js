@@ -1,6 +1,7 @@
 var dar_checker = 0; //Variable checker for darkmode
 var nav_checker = 0; // Variable checker for the navigation bar
 var right_bar_checker = 0; //Variable checker for right bar
+var skills_checker = 0;
 
 function darkmode()
 {
