@@ -14,6 +14,9 @@ function darkmode()
         document.getElementById('skills').classList.add('card_black');
         document.getElementById('interest').classList.remove('card_white');
         document.getElementById('interest').classList.add('card_black');
+        document.getElementById('short_bio').classList.remove('card_white');
+        document.getElementById('short_bio').classList.add('card_black');
+        document.getElementById('git').style.color = "#ffffff";
         dar_checker++;
     }
     else if (dar_checker > 0)
@@ -25,6 +28,9 @@ function darkmode()
         document.getElementById('skills').classList.add('card_white');
         document.getElementById('interest').classList.remove('card_black');
         document.getElementById('interest').classList.add('card_white');
+        document.getElementById('short_bio').classList.remove('card_black');
+        document.getElementById('short_bio').classList.add('card_white');
+        document.getElementById('git').style.color = "#000000";
         dar_checker = 0;
     }
 }

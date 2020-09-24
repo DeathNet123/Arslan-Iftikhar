@@ -252,7 +252,7 @@ header, footer
 }
 .card_white
 {
-    width: 80%;
+    width: 100%;
     font-size: 1.5rem;
     border: 1px solid #000000;
     border-radius: 25px;
@@ -260,9 +260,10 @@ header, footer
     -moz-border-radius:25px;
     -ms-border-radius:25px;
     -o-border-radius:25px;
+    padding: 4%;
     box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.3);
     margin-bottom: 3%;
-    padding-left: 5%;
+    
 }
 h1{
     text-align: center;
@@ -270,9 +271,9 @@ h1{
 }
 .card_black
 {
-    width: 80%;
+    width: 90%;
     font-size: 1.5rem;
-    padding: 1%;
+    padding: 4%;
     border: 1px solid #ffffff;
     border-radius: 25px;
     -webkit-border-radius: 25px;
@@ -280,7 +281,6 @@ h1{
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
     margin-bottom: 3%;
-    padding-left: 5%;
     box-shadow: 10px 10px 10px 0px rgba(255, 255, 255, 0.5);  
 }
 #skills
@@ -654,10 +654,48 @@ footer
     {
         display: none;
     }
+    #short_bio
+    {
+        display: none;   
+    }
 }
 @media only screen and (min-width: 1200px)
 
 {
+    h1
+    {
+        font-size: 2.3rem;
+        margin: 0;
+    }
+    .progress
+    {
+    width: 70%;
+    height: 15px;
+    }
+    .card_white
+    {
+        width: 25%;
+        font-size: 1em;
+        margin-right:  1%;
+        
+        
+    }
+    .card_black
+    {
+        width: 25%;
+        font-size: 1em;
+        margin-right:  1%;
+        box-shadow: 5px 5px 5px  rgba(255, 255, 255, 0.3);
+    }
+    #skills span
+    {
+        font-size: 2em;
+    }
+    ul, li
+    {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
     #lower
     {
         display: none;
@@ -722,8 +760,47 @@ footer
     text-align: center;
     border-right: 2px solid yellow;
 }
+
 nav>a:last-child
 {
     border-right: none;
+}
+#hi figure
+{
+    width: 10%;
+}
+#introduction
+{
+    font-size: 1.1em;
+    width: 30%;
+}
+#hi
+{
+    display: block;
+}
+#hi figure, p
+{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 1%;
+}
+#rows
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    justify-content: space-around;
+}
+#short_bio
+{
+    margin-left: 1%;
+}
+#short h2,h3,h4
+{
+    text-align: center;
+}
+#icons_holder
+{
+    width: 100%;
 }
 }
