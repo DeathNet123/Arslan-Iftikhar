@@ -4,8 +4,9 @@
     <title>Home</title>
     <meta charset="utf-8">
     <link rel="icon" type="image/x-icon" href="Icons/icon.ico">
-    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <!--<link rel="stylesheet" href="css/reset.css" type="text/css">-->
     <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/navigation.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <script src="js/index.js"></script>
 </head>
@@ -20,11 +21,24 @@
         </div>
         <div id="lower"><button class="button" aria-label="navigation"><img src="Icons/list.svg" alt="list " id="nav_img" onclick="slideapper()"></button></div>
         <nav id="desktop_nav">
-            <a class="nav_link active" href="#">Home</a>
-            <a class="nav_link" href="#">Story</a>
-            <a class="nav_link" href="#">Project</a>
+            <div class="drop_container">
+                <a class="nav_link active" href="#">Home</a>
+            </div>
+            <div class="drop_container">
+            <a class="nav_link" href="#">Developer Story</a>
+            </div>
+            <div class="drop_container">
+            <a class="nav_link" href="#">Projects</a>
+            </div>
+            <div class="drop_container">
             <a class="nav_link" href="#">Blog</a>
-            <a class="nav_link" href="#">Youtube</a>
+            <div class="drop_menu">
+                <a href="#" class="drop_link nav_link">Tech</a>
+                <a href="#" class="drop_link nav_link">Education</a>
+                <a href="#" class="drop_link nav_link">SRI</a>
+            </div>
+            </div>
+            <a class="nav_link" href="https://www.youtube.com/channel/UCYPWdLoGj0BxLuQAos5nQKA" target="_blank">Youtube</a>
         </nav>
     </header>
     <main>
@@ -36,11 +50,24 @@
                 <a class ="rightbar_link" href="#contact">Contact</a>
             </nav>
             <nav id="sidebar">
-                <a class="nav_link active" href="#">Home</a>
-                <a class="nav_link" href="#">Story</a>
-                <a class="nav_link" href="#">Project</a>
+                <div class="drop_container">
+                    <a class="nav_link active" href="#">Home</a>
+                </div>
+                <div class="drop_container">
+                <a class="nav_link" href="#">Developer Story</a>
+                </div>
+                <div class="drop_container">
+                <a class="nav_link" href="#">Projects</a>
+                </div>
+                <div class="drop_container">
                 <a class="nav_link" href="#">Blog</a>
-                <a class="nav_link" href="#">Youtube</a>
+                <div class="drop_menu">
+                    <a href="#" class="drop_link nav_link">Tech</a>
+                    <a href="#" class="drop_link nav_link">Education</a>
+                    <a href="#" class="drop_link nav_link">SRI</a>
+                </div>
+                </div>
+                <a class="nav_link" href="https://www.youtube.com/channel/UCYPWdLoGj0BxLuQAos5nQKA" target="_blank">Youtube</a>
             </nav>
             <section id="hi">
                 <figure><img class="developer" src="images/Developer.jpg" alt="Developer"></figure>
@@ -49,7 +76,6 @@
                         <div class="card_white" id="short_bio">
                         <h2>Bio</h2>
                 <h3>Education:</h3>
-                <p>
                     My name is Arslan and I love Computer and Physics.<br>
                     <ul>
                         <li>PUCIT Student</li>
@@ -59,16 +85,15 @@
                     <strong>Age:</strong> 19<br>
                     <strong>Born:</strong> June 23, 2002 (Jeddah, Ksa)<br>
                     <strong>Current Location:</strong> Lahore, Pakistan<br>
-                </p>
                 <label for="site_progress">Site Development Progress:</label>
                 <progress id="site_progress" value="20" max="100"></progress>
                 <h4>Social Media Links</h4><br>
                 <div class = "icons_holder">
-                    <a href="https://twitter.com/ARQ_2002" aria-label="Twitter" id="twitter" class="twitter"><i class="fab fa-twitter fa-2x"></i></a>
-                    <a  href="https://github.com/DeathNet123" aria-label="github" class="github" id="git"><i class="fab fa-github fa-2x" ></i></a>
-                    <a  href="https://www.facebook.com/ArslanWaytoit" aria-label="facebook" class="facebook"><i class="fab fa-facebook fa-2x" ></i></a>
-                    <a href="https://www.instagram.com/arq_2002/" aria-label="instagram" class="instagram"><i class="fab fa-instagram fa-2x" ></i></a>
-                    <a  href="https://stackoverflow.com/users/10785683/deathnet123?tab=profile" class="stack" aria-label="stack"><i class="fab fa-stack-overflow fa-2x" ></i></a>
+                    <a href="https://twitter.com/ARQ_2002" aria-label="Twitter"  class="twitter" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a  href="https://github.com/DeathNet123" aria-label="github" class="github" id="git" target="_blank"><i class="fab fa-github fa-2x" ></i></a>
+                    <a  href="https://www.facebook.com/ArslanWaytoit" aria-label="facebook" class="facebook" target="_blank"><i class="fab fa-facebook fa-2x" ></i></a>
+                    <a href="https://www.instagram.com/arq_2002/" aria-label="instagram" class="instagram" target="_blank"><i class="fab fa-instagram fa-2x" ></i></a>
+                    <a  href="https://stackoverflow.com/users/10785683/deathnet123?tab=profile" class="stack" aria-label="stack" target="_blank"><i class="fab fa-stack-overflow fa-2x" ></i></a>
         
                 </div>
             </div>        
@@ -131,11 +156,11 @@
     </main>
     <footer>
         <div class = "icons_holder">
-            <a href="https://twitter.com/ARQ_2002" aria-label="Twitter" id="twitter" class="twitter"><i class="fab fa-twitter fa-4x"></i></a>
-            <a  href="https://github.com/DeathNet123" aria-label="github" class="github"><i class="fab fa-github fa-4x" ></i></a>
-            <a  href="https://www.facebook.com/ArslanWaytoit" aria-label="facebook" class="facebook"><i class="fab fa-facebook fa-4x" ></i></a>
-            <a href="https://www.instagram.com/arq_2002/" aria-label="instagram" class="instagram"><i class="fab fa-instagram fa-4x" ></i></a>
-            <a  href="https://stackoverflow.com/users/10785683/deathnet123?tab=profile" class="stack" aria-label="stack"><i class="fab fa-stack-overflow fa-4x" ></i></a>
+            <a href="https://twitter.com/ARQ_2002" aria-label="Twitter" id="twitter" class="twitter" target="_blank"><i class="fab fa-twitter fa-4x"></i></a>
+            <a  href="https://github.com/DeathNet123" aria-label="github" class="github" target="_blank"><i class="fab fa-github fa-4x" ></i></a>
+            <a  href="https://www.facebook.com/ArslanWaytoit" aria-label="facebook" class="facebook" target="_blank"><i class="fab fa-facebook fa-4x" ></i></a>
+            <a href="https://www.instagram.com/arq_2002/" aria-label="instagram" class="instagram" target="_blank"><i class="fab fa-instagram fa-4x" ></i></a>
+            <a  href="https://stackoverflow.com/users/10785683/deathnet123?tab=profile" class="stack" target="_blank" aria-label="stack"><i class="fab fa-stack-overflow fa-4x" ></i></a>
 
         </div>
         <div id="copy">&copy; 2020 Arslan Iftikhar. All Rights Reserved.</div>
